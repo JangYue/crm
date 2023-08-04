@@ -1,0 +1,18 @@
+.form :global .ant-select.ant-select-in-form-item {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form :global .ant-select.ant-select-in-form-item .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+  height: 50px;
+}
+.form :global .ant-input {
+  height: 50px;
+  width: 403px;
+}
+.form .add {
+  color: #3F8CFF;
+  font-size: 16px;
+  font-weight: 600;
+}

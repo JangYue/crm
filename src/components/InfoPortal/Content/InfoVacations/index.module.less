@@ -1,0 +1,126 @@
+.box{
+  .card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:30px;
+    .item{
+      height: 193px;
+      background-color: #fff;
+      border-radius: 24px;
+      position: relative;
+      .count{
+        position: absolute;
+        top:26px;
+        left:26px;
+        :global{
+          .ant-progress{
+            // width: 72px;
+            // height: 72px;
+            // color:#15C0E6;
+            .ant-progress-inner{
+              width: 72px !important;
+              height: 72px !important;
+              .ant-progress-text{
+                font-size: 24px;
+                font-weight: 800;
+                // color:#15C0E6;
+              }
+            }
+          }
+        }
+      }
+      .vac{
+        position: absolute;
+        left:26px;
+        top:116px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #0A1629;
+      }
+      .date{
+        position: absolute;
+        left:26px;
+        top:146px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #91929E;
+      }
+    }
+
+  }
+  .title{
+    margin-top: 47px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0A1629;
+  }
+  .list{
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 31px;
+    // padding-top: 22px;
+    height: 91px;
+    background-color: #fff;
+    border-radius: 24px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    .gray{
+      font-size: 14px;
+      font-weight: 400;
+      color: #91929E;
+    }
+    .detail{
+      display: flex;
+      align-items:center;
+      .circle{
+        width: 10px;
+        height: 10px;
+        background-color: #F65160;
+        border-radius: 50%;
+        margin-right: 4px;
+      }
+      .bold{
+        font-size: 16px;
+        font-weight: 700;
+        color: #0A1629;
+      }
+    }
+    
+    .black{
+      font-size: 16px;
+      font-weight: 400;
+      color: #0A1629;
+    }
+    .type{
+      width: 261px;
+      .title{
+
+      }
+    }
+    .duration{
+      width: 143px;
+    }
+    .start{
+      width: 151px;
+    }
+    .end{
+      width: 155px;
+    }
+    .icon{
+      width: 75px;
+      height: 30px;
+      margin-right: 39px;
+      background-color: #FDC748;
+      color:#fff;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+  }
+
+}

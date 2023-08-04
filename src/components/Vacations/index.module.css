@@ -1,0 +1,73 @@
+.box {
+  width: 100%;
+}
+.box .topBox {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+.box .topBox .btn {
+  display: flex;
+}
+.box .topBox .btn .right {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  margin-right: 24px;
+}
+.box .topBox .btn .right img {
+  width: 24px;
+  height: 24px;
+}
+.box .topBox .btn .button {
+  width: 148px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.box .topBox .title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0A1629;
+  margin-top: 0;
+}
+.box .topBox .category {
+  width: 400px;
+  height: 48px;
+  background-color: #E6EDF5;
+  box-sizing: border-box;
+  padding: 4px;
+  display: flex;
+  border-radius: 20px;
+}
+.box .topBox .category div {
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+}
+.box .topBox .category .noactive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .topBox .category .noactive a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0A1629;
+  border-radius: 24px;
+}
+.box .topBox .category .active {
+  background-color: #3F8CFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .topBox .category .active a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}

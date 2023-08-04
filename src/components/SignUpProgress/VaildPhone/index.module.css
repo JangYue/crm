@@ -1,0 +1,10 @@
+.form :global .ant-form-item .ant-input {
+  height: 50px;
+  width: 403px;
+  box-sizing: border-box;
+}
+.form .password {
+  width: 402px;
+  height: 50px;
+  box-sizing: border-box;
+}

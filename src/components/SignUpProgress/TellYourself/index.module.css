@@ -1,0 +1,25 @@
+.form :global .ant-select.ant-select-in-form-item {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form :global .ant-select.ant-select-in-form-item .ant-select-selector {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.form .yes {
+  position: relative;
+}
+.form .yes label {
+  color: #7D8592;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  /* 171.429% */
+}
+.form .yes :global .ant-radio-group {
+  position: absolute;
+  right: 0px;
+}

@@ -1,0 +1,64 @@
+.form :global .ant-select.ant-select-in-form-item {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form :global .ant-select.ant-select-in-form-item .ant-select-selector {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.form :global .ant-input {
+  height: 50px;
+  width: 403px;
+}
+.form .choose .box {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form .choose .box div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #7D8592;
+}
+.form .choose .box div :global .ant-radio-button-wrapper:first-child {
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #D8E0F0;
+  flex-basis: 89px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form .choose .box div :global .ant-radio-button-wrapper {
+  border-radius: 10px;
+  border: 1px solid #D8E0F0;
+  width: 89px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form .choose .box div :global .ant-radio-button-wrapper .ant-radio-button-input {
+  border: none;
+}
+.form .choose .box div :global .ant-radio-button-wrapper-checked {
+  border: 1px solid #D8E0F0;
+  background: #3F8CFF;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0px 1px 2px 0px rgba(184, 200, 224, 0.22);
+}
+.form .choose .box div :global .ant-radio-button-wrapper:not(:first-child)::before {
+  width: 0;
+  height: 0;
+}
