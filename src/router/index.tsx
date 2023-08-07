@@ -49,11 +49,15 @@ export const routes: RouteObject[] = [
         path:"inviteTeam",
         element:<InviteTeam/>
       },
-      {
-        path:"signUpSucess",
+     {
+        path:"sucess",
         element:<SignUpSucess/>
-      }
+      } 
     ]
+  },
+  {
+    path:"/sucess",
+    element:<SignUpSucess/>
   },
   {
     path:'/home',

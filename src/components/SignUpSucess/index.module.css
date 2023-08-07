@@ -1,0 +1,55 @@
+.layout {
+  background-color: #e3ecfa;
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  padding: 20px 40px 20px 20px;
+  box-sizing: border-box;
+}
+.layout .box {
+  display: flex;
+  height: calc(100vh - 40px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f4f9fd;
+}
+.layout .box .bg {
+  width: 500px;
+  height: 373px;
+  margin-bottom: 60px;
+}
+.layout .box .title {
+  color: #0A1629;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+.layout .box .btn {
+  width: 145px;
+  height: 48px;
+  border-radius: 14px;
+  background: #3F8CFF;
+  box-shadow: 0px 6px 12px 0px rgba(63, 140, 255, 0.26);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.layout .box .btn div {
+  color: #FFF;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.layout .box .btn .arrow {
+  width: 24px;
+  height: 24px;
+}

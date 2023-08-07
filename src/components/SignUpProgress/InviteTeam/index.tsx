@@ -3,7 +3,7 @@ import styles from "../index.module.less"
 import arrow from "@/assets/images/arrow.png"
 import { Form, Input, Select,Radio} from 'antd';
 import myStyles from "./index.module.less"
-import {useNavigate} from "react-router-dom"
+import {useNavigate,Link} from "react-router-dom"
 import mobxStore from "@/store";
 const InviteTeam = ()=>{
     const [form] = Form.useForm<{ name: string; age: number }>();
@@ -18,7 +18,7 @@ const InviteTeam = ()=>{
         changProgress(2);
     }
     const next = ()=>{
-        navigate("/signup/signUpSucess");
+        navigate("/sucess")
     }
     return (
         <div className={styles.box}>
@@ -42,8 +42,8 @@ const InviteTeam = ()=>{
                 <span>Previous</span>
             </div>
             <div className={styles.right} onClick={next}>
-                <span>下一步</span>
-                <img src={arrow}/>
+                    <span>下一步</span>
+                    <img src={arrow}/>
             </div>
         </div>
     </div>
