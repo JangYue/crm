@@ -1,5 +1,5 @@
-import React from "react"
-import {Menu} from "antd"
+import React,{useState} from "react"
+import {Menu,Modal} from "antd"
 import type { MenuProps} from 'antd';
 import styles from "./index.module.less"
 import {DashBoardIcon,ProjectsSvgIcon,CalendarIcon,VactionsIcon,EmployeesIcon,MessengerIcon,InfoPortalIcon}  from "@/icon/index"
@@ -7,6 +7,7 @@ import logo from "@/assets/images/logo.png"
 import logout from "@/assets/images/logout.png"
 import support from "@/assets/images/Support.png"
 import { useNavigate } from "react-router-dom";
+import Support from "../Support";
 type MenuItem = Required<MenuProps>['items'][number];
 function getItem(
   label: React.ReactNode,
@@ -52,6 +53,8 @@ export default function SiderBar(){
     }
     
   }
+  const [modal1Open, setModal1Open] = useState(false);
+  const [modal2Open, setModal2Open] = useState(false);
   return (
     <div className={styles.boxes}>
       <div className={styles.logo}>
@@ -65,7 +68,19 @@ export default function SiderBar(){
         </Menu>
       </div>
       <div className = {styles.support}>
-          <img src={support}/>
+          <img src={support} onClick={() => setModal1Open(true)}/>
+          <Modal
+            title="Need some help"
+            style={{ top: 64,width:584}}
+            okText="Send Request"
+            open={modal1Open}
+            width={584}
+            onOk={() => setModal1Open(false)}
+            onCancel={() => setModal1Open(false)}
+            maskStyle={{background:' rgba(33, 85, 163, 0.16)'}}
+          >
+            <Support/>
+         </Modal>
         </div>
       <div className={styles.logout}>
           <div><img src={logout}/></div>

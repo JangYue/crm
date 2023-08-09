@@ -1,0 +1,92 @@
+:global .ant-modal-content {
+  width: 584px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+:global .ant-modal-content :where(.css-dev-only-do-not-override-w8mnev).ant-btn-default {
+  display: none;
+}
+:global .ant-modal-content .ant-btn-primary {
+  height: 48px;
+  width: 143px;
+  border-radius: 14px;
+  background: #3F8CFF;
+  box-shadow: 0px 6px 12px 0px rgba(63, 140, 255, 0.26);
+}
+:global .ant-modal .ant-modal-content {
+  border-radius: 24px;
+}
+:global .ant-menu-item {
+  width: 172px;
+  height: 44px;
+}
+:global .ant-menu-light .ant-menu-item-selected {
+  display: flex;
+  width: 172px;
+  padding-left: 8px;
+  height: 44px;
+  margin-right: 8px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3F8CFF;
+}
+:global .ant-menu-vertical > .ant-menu-item {
+  width: 172px;
+  height: 44px;
+  padding-left: 8px;
+}
+:global .ant-menu-vertical > .ant-menu-item,
+:global :where(.css-dev-only-do-not-override-w8mnev).ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title,
+:global :where(.css-dev-only-do-not-override-w8mnev).ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #7D8592;
+}
+:global .ant-layout .ant-layout-sider-children {
+  background-color: "#fff";
+  border-radius: "24px";
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-top: 40px;
+  -webkit-border-radius: "24px";
+  -moz-border-radius: "24px";
+  -ms-border-radius: "24px";
+  -o-border-radius: "24px";
+}
+:global .ant-layout .ant-layout-sider-children {
+  position: relative;
+}
+.boxes {
+  height: 890px;
+  box-sizing: border-box;
+}
+.box {
+  margin-top: 42px;
+}
+.siderBar .logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 8px;
+}
+.support {
+  width: 168px;
+  height: 214px;
+  position: absolute;
+  bottom: 118px;
+}
+.logout {
+  position: absolute;
+  bottom: 45px;
+  display: flex;
+  color: #7D8592;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.logout .out {
+  padding-left: 16px;
+}
