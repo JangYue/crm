@@ -8,3 +8,29 @@
   height: 50px;
   box-sizing: border-box;
 }
+.form .tishi {
+  height: 88px;
+  width: 403px;
+  border-radius: 14px;
+  background: #F4F9FD;
+  color: #3F8CFF;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.form .tishi img {
+  margin-right: 10px;
+}
+.form .display {
+  display: block;
+}
+.form .hide {
+  display: none;
+}

@@ -6,10 +6,10 @@ import mobxStore from "@/store"
 import myStyles from "./index.module.less"
 import {Form,Input} from "antd"
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
+import hint from "@/assets/images/hint.png"
 const VaildPhone = ()=>{
     const [form] = Form.useForm<{ name: string; age: number }>();
-    const [passwordVisible, setPasswordVisible] = React.useState(false);
-    const changProgress = mobxStore.changeSignupProgress;
+    const [tagState,setTagState] = useState(false)
     const navigate = useNavigate();
     const handleChange = (value: string) => {
         console.log(`selected ${value}`);
@@ -19,6 +19,9 @@ const VaildPhone = ()=>{
         navigate('/signup/tellYourself')
         changeProgress(1);
     }
+    const tagDisplay = ()=>{
+        setTagState(true);
+    }
     return (
         <div className={styles.box}>
             <div className={styles.top}>
@@ -27,8 +30,17 @@ const VaildPhone = ()=>{
             </div>
             <div>
                 <Form form={form} layout="vertical" autoComplete="off" className={myStyles.form}>
-                    <Form.Item name="tel" className={myStyles.item} label="">
-                        <Input placeholder="please enter the telphone"/>
+                    <Form.Item name="tel" 
+                               className={myStyles.item} 
+                               rules={[{ required: true, message: 'Please input your phone number!' }]}           
+                    >
+                        <Input placeholder="please enter the telphone" onClick={tagDisplay}/>
+                    </Form.Item>
+                    <Form.Item className={tagState?myStyles.display:myStyles.hide}>
+                        <div  className={myStyles.tishi}>
+                            <img src={hint}/>
+                           <span>SMS was sent to your number +1 345 673-56-67 It will be valid for 01:25</span> 
+                        </div>
                     </Form.Item>
                     <Form.Item name="email" className={myStyles.item} label="">
                         <Input placeholder="youremail@gmail.com"/>
